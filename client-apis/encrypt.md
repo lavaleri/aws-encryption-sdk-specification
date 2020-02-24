@@ -114,6 +114,7 @@ The [message header](#message-header.md) is serialized with the following specif
   specified by the [algorithm suite](#algorithm-suites.md)
 - [Frame Length](#message-header.md#frame-length): MUST be the same value as the input [frame length](#frame-length),
   if included.
+  Otherwise, this value SHOULD be 4096.
 - [IV](#message-header.md#iv): MUST have a value of 0, padded to the [IV length](#message-header.md#iv-length).
 - [Authentication Tag](#message-header.md#authentication-tag): MUST be the output of the
   [authenticated encryption algorithm](#algorithm-suites.md#encryption-algorithm)
